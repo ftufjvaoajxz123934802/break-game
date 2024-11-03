@@ -20,7 +20,7 @@ body {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 2px 15px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -37,5 +37,5 @@ button {
     margin-top: 15px;
 }
 #finalHint {
-    white-space: normal; /* ½T«O¥i¥H´«¦æ */
+    white-space: normal; /* Â½TÂ«OÂ¥iÂ¥HÂ´Â«Â¦Ã¦ */
 }
