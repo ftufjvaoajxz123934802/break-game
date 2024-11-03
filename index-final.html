@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山駝馬的冒險</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="goat.jpg" type="image/png">
+</head>
+<body>
+    <div id="finalWeapon">
+        <h2>選出你的武器打敗死星雷射</h2>
+        <button onclick="selectWeapon(1)">進擊的號角</button>
+        <button onclick="selectWeapon(2)">陌刀</button>
+        <button onclick="selectWeapon(3)">無限手套</button>
+        <button onclick="selectWeapon(4)">嘎嘣脆的骨頭</button>
+        <div id="weaponHint"></div>
+    </div>
+
+    <!-- 最終決戰 -->
+    <div id="finalBattle" class="hidden">
+        <h2>最終決戰</h2>
+        <p>馬桶發動了最後攻擊！你使用了嘎嘣脆的骨頭打中馬桶的弱點並擊敗了它！</p>
+        <button onclick="defeatToilet()">擊敗馬桶</button>
+        <p id="finalHint" class="hint"></p>
+    </div>
+    <div id="finalHint"></div>
+
+    <footer>
+        <small>
+            © 2024 Harry Chen Toilet games cooperation. All Rights Reserved.
+        </small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

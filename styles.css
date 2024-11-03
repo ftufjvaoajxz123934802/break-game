@@ -1,0 +1,41 @@
+body {
+    font-family: 'PingFang', sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#intro, #level1, #level2, #level3, #finalWeapon, #finalBattle {
+    padding: 50px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+.hint {
+    color: #b30000;
+    margin-top: 15px;
+}
+#finalHint {
+    white-space: normal; /* 確保可以換行 */
+}
