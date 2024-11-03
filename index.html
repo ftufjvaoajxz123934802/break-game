@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山駝馬的冒險</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="goat.jpg" type="image/png">
+</head>
+<body>
+    <!-- 遊戲開始頁面 -->
+    <div id="intro">
+        <h1>
+            山駝馬的冒險
+            <font color="red" size="3">
+                <sup>
+                    <sup>
+                        <i>
+                            beta
+                        </i>
+                    </sup>
+                </sup>
+            </font>
+        </h1>
+        <p>你將跟隨山駝馬一起，擊敗邪惡的馬桶，阻止它使用死星雷射征服世界！</p>
+        <button onclick="startGame()">開始冒險</button>
+    </div>
+
+    <!-- 第一關：密碼破解 -->
+    <div id="level1" class="hidden">
+        <h2>第一關：密碼破解</h2>
+        <p>找到山駝馬的電話號碼。<br>提示：這隻神奇生物的數字可能隱藏在日常生活中。</p>
+        <input type="text" id="phoneInput" placeholder="輸入電話號碼" v-on:keyup.enter="SendStraSearch()">
+        <button onclick="checkPhone()">提交</button>
+        <p id="phoneHint" class="hint"></p>
+    </div>
+
+    <!-- 第二關：特別號碼 -->
+    <div id="level2" class="hidden">
+        <h2>第二關：山駝馬的特別號碼</h2>
+        <p>山駝馬的特別號碼是什麼？聽說是歷史遺留下來的祕密。</p>
+        <input type="text" id="specialInput" placeholder="輸入特別號碼" v-on:keyup.enter="SendStraSearch()">
+        <button onclick="checkSpecialNumber()">提交</button>
+        <p id="specialHint" class="hint"></p>
+    </div>
+
+    <!-- 第三關：死星雷射的解除機關 -->
+    <div id="level3" class="hidden">
+        <h2>第三關：死星雷射的解除機關</h2>
+        <p>死星雷射被三重鎖機關保護，必須在倒數計時前按下正確按鈕。<br>提示：三角、五角、七角。</p>
+        <button onclick="toggleSwitch(3)">三角形</button>
+        <button onclick="toggleSwitch(5)">五角形</button>
+        <button onclick="toggleSwitch(7)">七角形</button>
+        <button onclick="submitDisarmCode()">確認</button>
+        <p id="laserHint" class="hint"></p>
+    </div>
+
+    <!-- 最終決戰 -->
+    <div id="finalBattle" class="hidden">
+        <h2>最終決戰</h2>
+        <p>馬桶發動了最後攻擊！使用你的知識找出弱點擊敗它！</p>
+        <button onclick="defeatToilet()">擊敗馬桶</button>
+        <p id="finalHint" class="hint"></p>
+    </div>
+    <div id="finalHint"></div>
+
+    <footer>
+        <small>
+            © 2024 Harry Chen Toilet games cooperation. All Rights Reserved.
+        </small>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
