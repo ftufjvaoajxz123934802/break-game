@@ -36,7 +36,7 @@ function checkSpecialNumber() {
     }
 }
 
-function BackToGame01(){
+function backToGame01(){
     document.getElementById('level2').classList.remove('hidden');
         document.getElementById('easter-01').classList.add('hidden');
 }
