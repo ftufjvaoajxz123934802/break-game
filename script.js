@@ -43,13 +43,6 @@ document.getElementById('easter-01').classList.add('hidden');
     document.getElementById('level2').classList.remove('hidden');
     
 }
-function goto2(){
-            document.getElementById('intro').classList.add('hidden');
-        
-document.getElementById('level2').classList.remove('hidden');
-
-}
-
 
 // 第三關：死星雷射的解除機關
 let disarmSequence = [];
