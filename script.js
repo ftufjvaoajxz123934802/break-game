@@ -31,7 +31,7 @@ function checkSpecialNumber() {
 
 // 第三關：死星雷射的解除機關
 let disarmSequence = [];
-let correctSequence = [3, 5, 7]; // 代表三角形、五角形、七角形
+let correctSequence = [3, 5, 7];
 function toggleSwitch(shape) {
     disarmSequence.push(shape);
     if (disarmSequence.length === 3) {
@@ -44,8 +44,8 @@ function submitDisarmCode() {
     if (JSON.stringify(disarmSequence) === JSON.stringify(correctSequence)) {
         alert("死星雷射已成功解除！前往最終決戰！");
         setTimeout(() => {
-            window.location.href = 'index-final.html'; // 將 index-final.html 替換為您的目標文件名
-        }, 200); // 1秒後自動導航
+            window.location.href = 'index-final.html';
+        }, 200);
         document.getElementById('finalWeapon').classList.add('hidden');
         document.getElementById('intro').classList.remove('hidden');
     } else {
@@ -78,14 +78,14 @@ function selectWeapon(option) {
             alert = "請選擇有效的武器！";
     }
 }
-// 重啟遊戲的函數
+// 回到最初的起點
 function restartGame() {
     setTimeout(() => {
-        window.location.href = 'index.html'; // 將 index.html 替換為您的目標文件名
-    }, 200); // 1秒後自動導航
+        window.location.href = 'index.html'; 
+    }, 200); 
     document.getElementById('finalWeapon').classList.add('hidden');
     document.getElementById('intro').classList.remove('hidden');
-    // 可以根據需要重置其他遊戲狀態
+    
 }
 
 // 最終決戰
@@ -94,7 +94,7 @@ function defeatToilet() {
     hint.innerText = "恭喜你！山駝馬成功擊敗了馬桶，世界安全了!\r感謝您遊玩試玩版，遊戲正式版正如火如荼的製作中";
 }
 window.onload = function () {
-    // 新增事件監聽器以支持 Enter 鍵提交
+
     document.getElementById('phoneInput').addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
             checkPhone();
@@ -107,7 +107,7 @@ window.onload = function () {
         }
     });
 
-    // 將這段程式碼新增到死亡星雷射解除機關按鈕中
+    
     document.querySelectorAll('#level3 button').forEach(button => {
         button.addEventListener('keypress', function (event) {
             if (event.key === 'Enter') {
