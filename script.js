@@ -40,6 +40,9 @@ function checkSpecialNumber() {
 }
 
 function backToGame(){
+    document.getElementById('intro').classList.add('hidden');
+        
+document.getElementById('level2').classList.remove('hidden');
     setTimeout(() => {
         window.location.href = 'index.html'; 
     }, 200); 
