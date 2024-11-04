@@ -27,9 +27,6 @@ function checkSpecialNumber() {
     } 
     else if(specialNumber === "970218"){
         alert("發現彩蛋了")
-        setTimeout(() => {
-        window.location.href = 'index-easter01.html'; 
-    }, 200); 
         document.getElementById('level2').classList.add('hidden');
         document.getElementById('easter-01').classList.remove('hidden');
     }
