@@ -24,7 +24,14 @@ function checkSpecialNumber() {
         alert("正確的特別號碼！準備進入下一關！");
         document.getElementById('level2').classList.add('hidden');
         document.getElementById('level3').classList.remove('hidden');
-    } else {
+    } 
+    else if(specialNumber === "970218"){
+        alert("發現彩蛋了")
+        document.getElementById('level2').classList.add('hidden');
+        document.getElementById('easter').classList.remove('hidden');
+    }
+    
+    else {
         hint.textContent = "特別號碼錯誤，請再試一次。";
     }
 }
