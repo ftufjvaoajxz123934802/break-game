@@ -42,10 +42,7 @@ function checkSpecialNumber() {
 function backToGame(){
     document.getElementById('intro').classList.add('hidden');
     document.getElementById('level2').classList.remove('hidden');
-    setTimeout(() => {
-        window.location.href = 'index.html'; 
-    }, 200); 
-    goto2();
+    
 }
 function goto2(){
             document.getElementById('intro').classList.add('hidden');
