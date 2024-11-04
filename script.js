@@ -46,7 +46,7 @@ function backToGame(){
     goto2();
 }
 function goto2(){
-            document.getElementById('easter-01').classList.add('intro');
+            document.getElementById('intro').classList.add('hidden');
         
 document.getElementById('level2').classList.remove('hidden');
 
