@@ -31,6 +31,20 @@ button {
     button:hover {
         background-color: #0056b3;
     }
+/* 讓圖片容器自適應頁面大小 */
+.image-container {
+    width: 100%;         /* 設置為全寬 */
+    height: auto;        /* 高度根據寬度比例調整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 讓圖片根據容器自動縮放 */
+.image-container img {
+    max-width: 100%;      /* 圖片寬度不超過容器 */
+    height: auto;         /* 保持圖片的寬高比例 */
+}
 
 .hint {
     color: #b30000;
