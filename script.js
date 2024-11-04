@@ -38,6 +38,8 @@ function checkSpecialNumber() {
 
 function backToGame(){
     document.getElementById('intro').classList.add('hidden');
+    
+document.getElementById('easter-01').classList.add('hidden');
     document.getElementById('level2').classList.remove('hidden');
     
 }
