@@ -9,7 +9,7 @@ body {
     display: none;
 }
 
-#intro, #level1, #level2, #level3, #finalWeapon, #finalBattle {
+#intro, #level1, #level2, #level3, #level4, #finalWeapon, #finalBattle {
     padding: 50px;
     border: 2px solid #333;
     border-radius: 10px;
