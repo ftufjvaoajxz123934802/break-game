@@ -61,14 +61,12 @@ function submitDisarmCode() {
         setTimeout(() => {
             window.location.href = 'index-final.html';
         }, 200);
-        document.getElementById('finalWeapon').classList.add('hidden');
-        document.getElementById('intro').classList.remove('hidden');
     } else {
         hint.textContent = "機關順序錯誤，必須重新開始！";
         disarmSequence = [];
     }
 }
-
+//第四關：山駝馬的需要加速
 function checkSpeedUpEnglish() {
     const specialEnglish = document.getElementById('englishInput').value;
     const hint = document.getElementById('specialHint');
