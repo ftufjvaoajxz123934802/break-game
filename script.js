@@ -139,6 +139,12 @@ window.onload = function () {
         }
     });
 
+    document.getElementById('englishInput').addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            checkSpeedUpEnglish();
+        }
+    });
+
     
     document.querySelectorAll('#level3 button').forEach(button => {
         button.addEventListener('keypress', function (event) {
