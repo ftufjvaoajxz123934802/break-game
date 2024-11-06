@@ -69,7 +69,7 @@ function submitDisarmCode() {
 //第四關：山駝馬的需要加速
 function checkSpeedUpEnglish() {
     const specialEnglish = document.getElementById('englishInput').value;
-    const hint = document.getElementById('specialHint');
+    const hint = document.getElementById('englishHint');
     if (specialEnglish === "bawdy") {
         alert("您輸入的英文單字將使山駝馬迅速加速，使牠能在死星雷射發射前衝到馬桶面前！現在，準備挑選一把武器，擊敗邪惡的馬桶吧！");
         document.getElementById('level4').classList.add('hidden');
