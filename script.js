@@ -46,7 +46,7 @@ document.getElementById('easter-01').classList.add('hidden');
 
 // 第三關：死星雷射的解除機關
 let disarmSequence = [];
-let correctSequence = [3, 5, 7];
+let correctSequence = [3, 3, 3];
 function toggleSwitch(shape) {
     disarmSequence.push(shape);
     if (disarmSequence.length === 3) {
@@ -75,7 +75,7 @@ function checkSpeedUpEnglish() {
         document.getElementById('level4').classList.add('hidden');
         document.getElementById('selectWeapon').classList.remove('hidden');
     } 
-    else if(specialNumber === "970218"){
+    else if(specialEnglish === "970218"){
         alert("發現彩蛋了")
         document.getElementById('level2').classList.add('hidden');
         document.getElementById('easter-01').classList.remove('hidden');
