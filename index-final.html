@@ -8,14 +8,14 @@
     <link rel="icon" href="goat.jpg" type="image/png">
 </head>
 <body>
-       <div id="level4" class="hidden">
+       <div id="level4" >
         <h2>第四關：山駝馬的需要加速</h2>
         <p>完蛋了，死星雷射準備被發射出去了，聽說有一個英文單字可以讓山鴕馬加速來拯救世界 聽說是一個五個字母的文單字</p>
         <input type="text" id="englishInput" placeholder="輸入可以讓山鴕馬加速的英文單字" v-on:keyup.enter="SendStraSearch()">
         <button onclick="checkSpeedUpEnglish()">提交</button>
         <p id="englishHint" class="hint"></p>
     </div>
-    <div id="finalWeapon">
+    <div id="finalWeapon" class="hidden">
         <h2>選出你的武器打敗死星雷射</h2>
         <p><button onclick="selectWeapon(1)">進擊的號角</button></p>
         <p><button onclick="selectWeapon(2)">陌刀</button></p>
