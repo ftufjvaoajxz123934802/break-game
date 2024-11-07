@@ -66,6 +66,31 @@ function submitDisarmCode() {
         disarmSequence = [];
     }
 }
+
+//測試代碼
+let needCheckNumber = [];
+let summonTankNumber = [8, 9, 6, 4];
+function numberIn(shape) {
+    needCheckNumber.push(shape);
+    if (needCheckNumber.length === 4) {
+        submitSummonTank();
+    }
+}
+
+function submitSummonTank() {
+    const hint = document.getElementById('tankHint');
+    if (JSON.stringify(needCheckNumber) === JSON.stringify(summonTankNumber)) {
+        alert("死星雷射已成功解除！前往最終決戰！");
+        setTimeout(() => {
+            window.location.href = 'index-final.html';
+        }, 200);
+    }
+    else {
+        alert("機關順序錯誤，必須重新開始！");
+        summonTankNumber = [];
+    }
+}
+
 //第四關：山駝馬的需要加速
 function checkSpeedUpEnglish() {
     const specialEnglish = document.getElementById('englishInput').value;
