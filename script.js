@@ -87,7 +87,7 @@ function submitSummonTank() {
     }
     else {
         alert("機關順序錯誤，必須重新開始！");
-        summonTankNumber = [];
+        needCheckNumber = [];
     }
 }
 
